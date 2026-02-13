@@ -1,78 +1,202 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
 
-  <title>Songwoo Kim</title>
-  
-  <meta name="author" content="Songwoo Kim">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png"> 
+<head>
+  <!-- Title -->
+  <title>Songwoo Kim - Robotics Researcher</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1000">
+
+  <!-- Isotope JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  </style>
 </head>
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Songwoo Kim</name>
-              </p>
-              <p>
-                I am a Student at <a href="https://yonsei.ac.kr/"> Yonsei Univ.</a> based in Wonju, 
-                
-              </p>
-              <br>
-              <br>
-              <p style="text-align:center">
-                <a href="mailto:swkim@yonsei.ac.kr">Email</a> &nbsp/&nbsp
-                <a href="CV_Resume_Feb_2023.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://www.researchgate.net/profile/Songwoo-Kim">Research gate</a> &nbsp/&nbsp
-                <a href="https://github.com/songwookim">GitHub</a> &nbsp/&nbsp
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/headshot_green.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/headshot_green.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I am interested in Optimization, Robot Path Planning, Robot Modeling and Control. 
-              </p>                
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/first.png' width="160">
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+<body id="body">
+  <div id="main">
+    <div id="intro">
+      <div id="intro-text">
+        <h1>Songwoo Kim</h1>
+        <p>
+          Welcome! I am a researcher at Human Assistive Neuro(HAN) Lab, Yonsei University.
+          My research interests include optimization, robot path planning, robot modeling, and control.
+        </p>
+        <br>
+        <a href="https://scholar.google.com/">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.researchgate.net/profile/Songwoo-Kim">ResearchGate</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/songwookim">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <br><br>
+        E-mail: swkim [at] yonsei [dot] ac [dot] kr
+
+        <br><br>
+      </div>
+      <div id="intro-image">
+        <img src="images/headshot_green.jpg">
+      </div>
+    </div>
+
+    <div id="filters" class="button-group">
+      <button class="button is-checked" data-filter=".research">Research</button>
+      <button class="button" data-filter=".project">Projects</button>
+      <button class="button" data-filter=".misc">Misc</button>
+    </div>
+
+    <div class="grid">
+      <!-- #################################################### -->
+      <!-- Research -->
+      <!-- #################################################### -->
+      <div class="list-item research description" data-category="Research">
+        For a more up-to-date list, visit my <a
+          href="https://www.researchgate.net/profile/Songwoo-Kim">ResearchGate</a>
+      </div>
+
+      <div id="main-research">
+
+        <!--2023 KIIS -->
+        <div class="list-item research" data-category="research">
+          <a class="thumbnail">
+            <img src="images/first.png" width="180px" alt="KIIS 2023 thumbnail">
+          </a>
+          <div class="research-description">
+            <h3>
               <a href="https://www.researchgate.net/profile/Songwoo-Kim">
-                <papertitle>Three Finger Robotic Platform for Demonstrating Dexterous Manipulation</papertitle>
+                Three Finger Robotic Platform for Demonstrating Dexterous Manipulation
               </a>
-              <br>
-              Song Woo Kim, Dae Han Sim, Janghyeon Kim, Ji-Hyeon Yoo, Ho-Jin Jung, and Han Ul Yoon
-              <br>
-                <em>KIIS</em>, 2023 
-              <br>
-              <a href="https://www.researchgate.net/profile/Songwoo-Kim">paper</a>
-              <p></p>
-              <p>Design testbed environment for three finger robotic platform.</p>
-            </td>
-          </tr>
-          <tr>
-          
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+            </h3>
+            <p>
+              <u>Song Woo Kim</u>, Dae Han Sim, Janghyeon Kim, Ji-Hyeon Yoo, Ho-Jin Jung, and Han Ul Yoon <br>
+              <span style="display:inline-block; font-style: italic; transform: skewX(-12deg);">
+                KIIS 2023
+              </span> <br>
+              <a href="https://www.researchgate.net/profile/Songwoo-Kim">Paper</a>
+            </p>
+          </div>
+        </div>
+
+        <!--2023 IROS (Co-author) -->
+        <div class="list-item research" data-category="research">
+          <a class="thumbnail">
+            <img src="images/first.png" width="180px" alt="IROS 2023 thumbnail">
+          </a>
+          <div class="research-description">
+            <h3>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10341831">
+                An Approach to Design a Biomechanically-Inspired Reward Function to Solve a Patience Cube Under Reinforcement Learning Framework
+              </a>
+            </h3>
+            <p>
+              Janghyeon Kim, Ho-Jin Jung, Dae Han Sim, Ji-Hyeon Yoo, <u>Song Woo Kim</u>, Han Ul Yoon <br>
+              <span style="display:inline-block; font-style: italic; transform: skewX(-12deg);">
+                International Conference on Intelligent Robots and Systems (IROS) 2023
+              </span> <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/10341831">Paper</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- #################################################### -->
+      <!-- Projects -->
+      <!-- #################################################### -->
+
+      <div class="list-item project" data-category="project">
+        <p style="color: #666; font-style: italic;"> Upload Soon ...</p>
+      </div>
+
+      <!-- #################################################### -->
+      <!-- Misc -->
+      <!-- #################################################### -->
+      <div class="list-item misc" data-category="misc">
+        <p class="date">2023</p> Yonsei University, Wonju
+      </div>
+
+    </div>
+    <div id="footer">This template is based on <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a>'s
+    </div>
+
+  </div>
+
+  <script>
+
+    // Isotope grid.
+    var $grid = $('.grid').isotope({
+      itemSelector: '.list-item',
+      layoutMode: 'fitRows',
+      transitionDuration: '0.0s',
+      stagger: 0,
+      initLayout: false,
+      getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function (itemElem) {
+          var weight = $(itemElem).find('.weight').text();
+          return parseFloat(weight.replace(/[\(\)]/g, ''));
+        }
+      }
+    });
+
+    // Bind filter button click.
+    $('#filters').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      localStorage.setItem('filterValue', filterValue);
+      $grid.isotope({ filter: filterValue });
+    });
+
+    // Change is-checked class on buttons.
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+
+    function update_isotope() {
+      var defaultFilterValue = localStorage.getItem('filterValue');
+      if (defaultFilterValue == null) {
+        defaultFilterValue = ".research"
+      }
+      $grid.isotope({ filter: defaultFilterValue });
+      var buttons = document.getElementsByClassName("button");
+      for (var currButton of buttons) {
+        if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+          currButton.classList.add('is-checked');
+        } else {
+          currButton.classList.remove('is-checked');
+        }
+      }
+    }
+
+    function toggle_bio() {
+      var x = document.getElementById("more-bio");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    update_isotope();
+
+  </script>
 </body>
 
 </html>
