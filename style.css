@@ -302,6 +302,120 @@ h3 a:hover {
 }
 
 /**************************************************/
+/* Project cards. */
+
+.project-description {
+  width: 80%;
+  float: left;
+}
+
+.project-description h3 a {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(49, 144, 232);
+}
+
+.project-description h3 a:hover {
+  color: rgb(161, 35, 183);
+  border-bottom: none;
+}
+
+.project-description p {
+  font-size: 0.95em;
+  font-weight: 300;
+  color: rgb(74, 84, 93);
+  line-height: 1.4em;
+  letter-spacing: 0.2px;
+  margin-top: 0.2em;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 0.3em !important;
+}
+
+.project-date {
+  font-size: 0.85em !important;
+  color: #a0a8b0 !important;
+}
+
+.project-links {
+  margin-top: 0.3em !important;
+}
+
+.project-links a {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: rgb(88, 101, 112);
+}
+
+/**************************************************/
+/* Category tags / badges. */
+
+.tag {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border-radius: 4px;
+  font-size: 0.78em !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.tag-course {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.tag-participation {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.tag-github {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/**************************************************/
+/* Project sub-filter buttons. */
+
+.sub-button-group {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.sub-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1.5px solid #d0d5da;
+  background: none;
+  color: #a0a8b0;
+  font-size: 0.95em;
+  line-height: 1.8em;
+  padding: 0 0.8em;
+  border-radius: 20px;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.sub-button:hover {
+  color: #150c21;
+  border-color: #150c21;
+}
+
+.sub-button.is-sub-checked {
+  color: #fff;
+  background: #150c21;
+  border-color: #150c21;
+}
+
+/**************************************************/
 /* Subtle footer at the bottom of the page. */
 
 #footer {
