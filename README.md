@@ -41,8 +41,8 @@ To run this website locally:
 
 - Email: swkim@yonsei.ac.kr
 - GitHub: [@songwookim](https://github.com/songwookim)
-- Research Gate: [Songwoo Kim](https://www.researchgate.net/profile/Songwoo-Kim)
+- ResearchGate: [Songwoo Kim](https://www.researchgate.net/profile/Songwoo-Kim)
 
 ## License
 
-© 2023 Songwoo Kim. All rights reserved.
+© 2023-2025 Songwoo Kim. All rights reserved.
